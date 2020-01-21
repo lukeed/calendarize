@@ -2,7 +2,7 @@
   "version": "1.0.0",
   "name": "calendarize",
   "repository": "lukeed/calendarize",
-  "description": "A tiny (196B) utility to generate calendar views",
+  "description": "A tiny (204B) utility to generate calendar views",
   "module": "dist/index.mjs",
   "unpkg": "dist/index.min.js",
   "main": "dist/index.js",
