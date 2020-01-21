@@ -4,6 +4,8 @@
 
 This function (optionally) accepts a date in exchange for a calendar view of that date's month.
 
+**The output contains no labels!** This is ideal for calendar generator because it allows the developer to easily customize their labels, including full i18n/internationalization support! ([Demo](https://codepen.io/lukeed/pen/KKwrLRz))
+
 Additionally, this module is delivered as:
 
 * **ES Module**: [`dist/calendarize.mjs`](https://unpkg.com/calendarize/dist/index.mjs)
@@ -57,9 +59,11 @@ const view = calendarize('Nov 01, 2019');
 ### calendarize(date?)
 Returns: `Array<Week>`
 
-An Array of `Week` Arrays is returned.<br>Each `Week` is an Array of 7 numbers, each representing a numerical date.
+An Array of `Week` Arrays is returned.
 
-> **Important:** A zero (`0`) value represents a date that exists beyond the current month view.
+Each `Week` is an Array of 7 numbers, wherein each **index** is the `Day` of the week and each **value** is the numerical date. <br>The index is forwarded from [`Date.getDay`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Date/getDay), which means that **index: 0** is Sunday.
+
+> **Important:** A **value** of zero (`0`) represents a date that exists beyond the current month view.
 
 #### date
 Type: `string` | `number` | `Date`<br>
