@@ -1,0 +1,35 @@
+{
+  "version": "0.0.0",
+  "name": "calendarize",
+  "repository": "lukeed/calendarize",
+  "description": "WIP",
+  "module": "dist/index.mjs",
+  "unpkg": "dist/index.min.js",
+  "main": "dist/index.js",
+  "types": "index.d.ts",
+  "license": "MIT",
+  "files": [
+    "*.d.ts",
+    "dist"
+  ],
+  "author": {
+    "name": "Luke Edwards",
+    "email": "luke.edwards05@gmail.com",
+    "url": "https://lukeed.com"
+  },
+  "engines": {
+    "node": ">=8"
+  },
+  "keywords": [
+  ],
+  "scripts": {
+    "build": "bundt",
+    "test": "tape -r esm test/*.js | tap-spec"
+  },
+  "devDependencies": {
+    "bundt": "0.4.0",
+    "esm": "3.2.25",
+    "tap-spec": "5.0.0",
+    "tape": "4.13.0"
+  }
+}
