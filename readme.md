@@ -1,6 +1,6 @@
 # calendarize [![build status](https://badgen.net/github/status/lukeed/calendarize)](https://github.com/lukeed/calendarize/actions) [![codecov](https://badgen.now.sh/codecov/c/github/lukeed/calendarize)](https://codecov.io/gh/lukeed/calendarize)
 
-> A tiny (196B) utility to generate calendar views.
+> A tiny (207B) utility to generate calendar views.
 
 This function (optionally) accepts a date in exchange for a calendar view of that date's month.
 

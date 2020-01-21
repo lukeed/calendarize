@@ -1,9 +1,9 @@
-export default function (target) {
+export default function (target, weekStart) {
 	var i=0, j=0, week, out=[], date = new Date(target || new Date);
 	var year = date.getFullYear(), month = date.getMonth();
 
 	// day index (of week) for 1st of month
-	var first = new Date(year, month, 1).getDay();
+	var first = new Date(year, month, weekStart == null ? 1 : weekStart).getDay();
 
 	// how many days there are in this month
 	var days = new Date(year, month+1, 0).getDate();
