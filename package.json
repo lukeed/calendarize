@@ -2,7 +2,7 @@
   "version": "0.0.0",
   "name": "calendarize",
   "repository": "lukeed/calendarize",
-  "description": "WIP",
+  "description": "A tiny (196B) utility to generate calendar views",
   "module": "dist/index.mjs",
   "unpkg": "dist/index.min.js",
   "main": "dist/index.js",
@@ -21,6 +21,9 @@
     "node": ">=8"
   },
   "keywords": [
+    "calendar",
+    "utils",
+    "date"
   ],
   "scripts": {
     "build": "bundt",
