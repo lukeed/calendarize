@@ -9,7 +9,7 @@ export default function (target, offset) {
 	var days = new Date(year, month+1, 0).getDate();
 
 	while (i < days) {
-		for (j=0, week=new Array(7); j < 7;) {
+		for (j=0, week=Array(7); j < 7;) {
 			while (j < first) week[j++] = 0;
 			week[j++] = ++i > days ? 0 : i;
 			first = 0;
