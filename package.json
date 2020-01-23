@@ -1,5 +1,5 @@
 {
-  "version": "1.1.0",
+  "version": "1.1.1",
   "name": "calendarize",
   "repository": "lukeed/calendarize",
   "description": "A tiny (202B) utility to generate calendar views",
